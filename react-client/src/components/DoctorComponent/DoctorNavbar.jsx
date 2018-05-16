@@ -123,6 +123,22 @@ class DoctorNavbar extends React.Component {
     });
   }
 
+  componentDidMount() {
+    var that = this
+    $.ajax({
+      url:'/Doctor/isLogin',
+      type:'GET',
+      success:function(data){
+        that.setState({
+          auth: true
+        })
+      },
+      error:function(err){
+        console.log(err);
+      }
+    });
+  }
+
   render() {
     const { classes } = this.props;
     const { auth, anchorEl } = this.state;
@@ -163,7 +179,7 @@ class DoctorNavbar extends React.Component {
                   onClose={this.handleClose}
                 >                    
                   <MenuItem onClick={this.handleClose} component={Link} to="/doctor/patient">Patents</MenuItem>
-                  <MenuItem onClick={this.handleClose} component={Link} to="/doctor/test">My account</MenuItem>
+                  <MenuItem onClick={this.handleClose} component={Link} to="/doctor/records">My account</MenuItem>
                   <Divider />
                 </Menu>
               </div>

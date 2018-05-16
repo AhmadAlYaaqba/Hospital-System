@@ -25,6 +25,14 @@ doctorRouter.route('/')
 .delete(function (req, res) {
 	DoctorController.logout(req, res);
 })
+doctorRouter.route('/isLogin')
+	.get(function (req, res) {
+		DoctorController.isLogin(req, res);
+	})
+doctorRouter.route('/test')
+	.get(function (req, res) {
+		res.json(req.session);
+	})	
 //get patient info by the userName
 doctorRouter.route('/:userNamePatient')
 .get(function(req,res){
