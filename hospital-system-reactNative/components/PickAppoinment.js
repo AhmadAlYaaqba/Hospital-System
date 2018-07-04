@@ -40,7 +40,7 @@ class PickAppoinment extends React.Component{
   }
 
   getUser(value) {
-    var url = 'https://test-tatarus.herokuapp.com/api/userController/' + value;
+    var url = 'https://tatarus-rbk.herokuapp.com/api/userController/' + value;
     fetch(url)
     .then((response) => response.json())
     .then((responseJson) => {
@@ -129,7 +129,7 @@ class PickAppoinment extends React.Component{
       console.log(obj);
       //here we will send the the data
 
-      fetch('http://test-tatarus.herokuapp.com/app', {
+      fetch('http://tatarus-rbk.herokuapp.com/app', {
       method: 'POST', 
       body: JSON.stringify(obj), 
       headers:{

@@ -14,7 +14,7 @@ class PickTime extends React.Component{
 
 	componentDidMount(){
 		var arr=[];
-		fetch('http://test-tatarus.herokuapp.com/app')
+		fetch('http://tatarus-rbk.herokuapp.com/app')
 	    .then((response) => response.json())
 	    .then((responseJson) => {
 	    	for(var i=0;i<responseJson.length;i++){

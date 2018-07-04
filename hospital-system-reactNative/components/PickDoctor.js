@@ -1,6 +1,6 @@
 import React from 'react';
 import {TextInput, Text, View,Button,StyleSheet,Picker,Alert} from 'react-native';
-let url='http://test-tatarus.herokuapp.com';
+let url='http://tatarus-rbk.herokuapp.com';
 
 class PickDoctor extends React.Component{
 	constructor(props){

@@ -11,7 +11,7 @@ export default class News extends React.Component {
   }
 
   componentDidMount(){
-    return fetch('https://test-tatarus.herokuapp.com/news')
+    return fetch('https://tatarus-rbk.herokuapp.com/news')
       .then((response) => response.json())
       .then((responseJson) => {
 

@@ -39,7 +39,7 @@ constructor(props){
   }
 
   getUser(value) {
-    var url = 'https://test-tatarus.herokuapp.com/api/userController/' + value;
+    var url = 'https://tatarus-rbk.herokuapp.com/api/userController/' + value;
     fetch(url)
     .then((response) => response.json())
     .then((responseJson) => {

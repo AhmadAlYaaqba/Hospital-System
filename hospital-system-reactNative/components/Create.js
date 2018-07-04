@@ -46,7 +46,7 @@ export default class Create extends React.Component {
 			personalImgUrl: this.state.personalImgUrl,
 			idCardImageUrl: this.state.idCardImageUrl,
 		}
-		axios.post('https://test-tatarus.herokuapp.com/api/userController/create', obj)
+		axios.post('https://tatarus-rbk.herokuapp.com/api/userController/create', obj)
 			.then(function (response) {
 				//console.log(response.data);
 				alert("Account created");

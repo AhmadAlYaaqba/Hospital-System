@@ -1,6 +1,6 @@
 import React from 'react';
 import {View,Text,Button,StyleSheet} from 'react-native';
-let url='http://test-tatarus.herokuapp.com/app';
+let url='http://tatarus-rbk.herokuapp.com/app';
 class SendData extends React.Component{
 	constructor(props){
 		super(props);
